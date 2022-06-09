@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutY="175.0" prefHeight="23.0" prefWidth="261.0" />
+      <Button layoutX="259.0" layoutY="175.0" mnemonicParsing="false" text="Button" />
+      <TextArea layoutY="35.0" prefHeight="140.0" prefWidth="313.0" />
+      <ToolBar prefHeight="38.0" prefWidth="313.0">
+        <items>
+          <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

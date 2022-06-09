@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hBOX xmlns:fx="http://javafx.com/fxml">
+	<padding>
+		<Insets top="10" right="10" bottom="10" left="10" />
+	</padding>
+	<spacing>10</spacing>
+	
+	<children>
+		<TextField>
+			<prefwidth>200</prefwidth>
+		</TextField>
+		
+		<Button>
+			<text>확인</text>
+		</Button>
+	</children>
+	
+	</hBOX>

@@ -1,0 +1,41 @@
+package application;
+	
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+
+public class Main extends Application {
+	@Override
+	public void start(Stage stage) {
+		try {
+			
+			Pane pane = new Pane();
+			
+			Scene scene = new Scene(pane,600,600);
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			stage.setTitle("My sindow");
+			stage.setResizable(false);
+			
+			Label text = new Label();
+			text.setText("Hello javaFX");
+			pane.getChildren().add(text);
+			
+			text.setStyle("-fx-font-size:50; -fx-text-fill:red;-fx-background-color:yellow");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+		
+	}
+}
