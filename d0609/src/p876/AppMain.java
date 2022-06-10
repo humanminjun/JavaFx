@@ -8,7 +8,8 @@ import javafx.stage.Stage;
 
 public class AppMain extends Application {
 	@Override
-	public void start(Stage primaryStage) throws Exception {
+	public void start(Stage primaryStage){
+		try {
 		Parent root = FXMLLoader.load(getClass().getResource("root.fxml"));
 		Scene scene = new Scene(root);
 		
@@ -16,8 +17,11 @@ public class AppMain extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		primaryStage.setResizable(false);
-	}
 	
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+	}
 	public static void main(String[] args) {
 		launch(args);
 	}
