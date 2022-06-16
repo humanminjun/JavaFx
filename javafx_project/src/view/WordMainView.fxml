@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="480.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.WordMainController">
+   <children>
+      <SplitPane dividerPositions="0.9" layoutX="54.0" layoutY="133.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="wordTable" layoutX="50.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="korean" prefWidth="75.0" text="한글" />
+                      <TableColumn fx:id="english" prefWidth="75.0" text="영어" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="318.0">
+               <children>
+                  <Button layoutX="100.0" layoutY="10.0" mnemonicParsing="false" onAction="#addAction" prefHeight="20.0" prefWidth="60.0" text="추가" />
+                  <Button layoutX="170.0" layoutY="10.0" mnemonicParsing="false" onAction="#editAction" prefHeight="20.0" prefWidth="60.0" text="수정" />
+                  <Button layoutX="240.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="20.0" prefWidth="60.0" text="삭제" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
